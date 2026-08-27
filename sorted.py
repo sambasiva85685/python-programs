@@ -1,7 +1,7 @@
-#a=["hello","siva","whatups"]
-#print(sorted(a,key=lambda x:len(x)))
-#print(sorted(a))
-#print(sorted(a,reverse=True))
+a=["hello","siva","whatups"]
+print(sorted(a,key=lambda x:len(x)))
+print(sorted(a))
+print(sorted(a,reverse=True))
 
 #=[("python",12),("hello",67),("cls",42)]
 #print(sorted(a,key=lambda x:x[1]))
@@ -27,6 +27,9 @@ print(sorted(a,key=lambda x:len(x)))
 #a=[5,10,15,20,25,30]
 #from functools import reduce
 #print(reduce(lambda x,y:x*y,sorted(filter(lambda x:x%5==0,list(map(lambda x:x+5,a))),reverse=True)))
-a=[5,10,15,20,25,30]
+# a=[5,10,15,20,25,30]
+# from functools import reduce
+# print(reduce(lambda x,y:x*y,sorted(filter(lambda x:x%5==0,list(map(lambda x:x+5,a))),reverse=True)))
+a=[5,10,3,5,20,30]
 from functools import reduce
 print(reduce(lambda x,y:x*y,sorted(filter(lambda x:x%5==0,list(map(lambda x:x+5,a))),reverse=True)))

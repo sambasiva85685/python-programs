@@ -50,3 +50,9 @@ def payment_required(func):
 def download_course():
     print("course downloaded")
 download_course()
+
+
+def details(name,marks):
+    print(name,marks)
+d={"name":"rahul","marks":45}
+details(**d)
